@@ -1,0 +1,209 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family: "amita";
+    src: url(fonts/amita/Amita-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'kaushan';
+    src: url(fonts/kaushan/KaushanScript-Regular.ttf);
+}
+
+/* 
+    paleta de cores utilizada no projeto:color: 
+    #b763da
+    #772a6a
+    #ed9db9
+    #a59cc3
+    #ddc7e1
+    */
+
+    :root{
+    --cor0: #b763da;
+    --cor1: #772a6a;
+    --cor2: #ed9db9;
+    --cor3: #a59cc3;
+    --cor4: #ddc7e1;
+    --cor5:#1f011a;
+    --fonte0: 'Kaushan_Script';
+    
+     
+    }
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor3);
+
+        }
+        header{
+            background-image: linear-gradient(to bottom, var(--cor1), var(--cor1));
+            min-height: 150px;
+            text-align:center;
+            margin: 1px;
+            padding: 2px;
+        }
+       h1{
+           font-family: Arial, Helvetica, sans-serif;
+           color: var(--cor4);
+           font-size: 36px;
+           font-weight: bolder;
+           text-shadow: 2px 2px 5px black;
+           text-align:center;
+       }
+       #texto{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--cor4);
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px black;
+        text-align:center;
+       }
+       h2{
+           font-family:'amita' ;
+           color: var(--cor4);
+           background-color: var(--cor5);
+           text-align: center;
+           box-shadow: 2px 2px 5px #011d01;
+           text-shadow: 2px 2px 5px black;
+       }
+       h3{
+           font-family: 'kaushan';
+           font-size: 28px;
+           background-color: var(--cor5);
+           box-shadow: 2px 2px 5px black;
+           color: var(--cor0);
+           text-shadow: 2px 2px 5px black;
+           text-align: center;
+       }
+       h4{
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 20px;
+           background-color: var(--cor5);
+           box-shadow: 2px 2px 5px black;
+           color: var(--cor5);
+           text-align: center;
+           padding: 10px;
+          
+       }
+
+       a.externo::after{
+           content: '\0020\1F517';
+       }
+       main{
+           min-width: 300px;
+           max-width: 1000px;
+           margin: auto;
+           margin-bottom: 30px;
+           padding: 20px;
+           background-color: white;
+           box-shadow: 0px 0px 10px grey;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+       }
+       main img{
+        
+            width: 65%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            padding: 1% 15%;
+           
+            
+          
+       }
+
+       main p{
+           margin: 15px 0px;
+           text-align: center;
+           text-indent: 30px;
+           font-size: 1em;
+           line-height: 2em;
+       }
+
+       main strong{
+           color: var(--cor1);
+           font-weight: bold;
+       }
+       
+
+       main a{
+           text-decoration: none;
+           font-weight: bold;
+           color: var(--cor1);
+           background-color: var(--cor4);
+           padding: 2px 6px;
+       }
+
+       main a:hover{
+           text-decoration: underline;
+           color: var(--cor5);
+       }
+
+       div.video{
+           background-color: var(--cor4);
+           margin: opx -20px 30px -20px;
+           padding: 20px;
+           padding-bottom: 59%;
+           position: relative;
+       }
+
+       div.video > iframe{
+           position: absolute;
+           top: 5%;
+           left: 5%;
+           width: 90%;
+           height: 90%;
+       }
+        footer{
+            background-color: black;
+            color: var(--cor4);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        ul{
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            list-style-position: inside;
+        }
+        article{
+            background-color: var(--cor2);
+            padding: 5px;
+        }
+        nav{
+            background-color: rgb(17, 1, 17);
+            padding: 5px;
+            box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+        }
+        nav > a{
+            text-decoration: none;
+            color: linen;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            }
+            nav > a:hover{
+                background-color: var(--cor1);
+                color: var(--cor4);
+
+            }
+            nav > a::after{
+                color: mediumblue;
+            }
+            p{
+               background-color: white;
+                box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+                border-radius: 0px;
+                text-align: justify;
+                font-size: 16px;
+                line-height: 1.5em;
+
+                }
+            div{
+                margin: 4px;
+            }
+            div>img{
+                box-shadow:5px 5px 15px mediumpurple;
+            }
